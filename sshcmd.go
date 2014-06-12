@@ -54,7 +54,7 @@ func (s *SSHCommand) Execute(cmd string) error {
 	}
 
 	
-	err = session.Start(cmd)	
+	err = session.Run(cmd)	
 	if err != nil {
 		return err
 	}
